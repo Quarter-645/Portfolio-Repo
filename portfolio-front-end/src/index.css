@@ -2,17 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* React default settings */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Add this CSS to your main CSS file or include it in a style tag in your component file */
+.typewriter {
+    display: inline-block;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  
+.cursor {
+    display: inline-block;
+    width: 2px;
+    background-color: black;
+    animation: blink 1s infinite;
+}
+  
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
