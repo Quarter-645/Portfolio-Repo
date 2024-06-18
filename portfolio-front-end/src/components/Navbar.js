@@ -40,7 +40,7 @@ function Navbar() {
     };
 
     return (
-      <div className="bg-lightGrey rounded-3xl p-1 flex fixed top-4 left-1/2 -translate-x-1/2">
+      <div className="bg-lightGrey rounded-3xl p-1 flex fixed top-4 left-1/2 -translate-x-1/2 z-50 border border-grey">
         <a className={`${activeLink === 'home' ? ACTIVE_LINK_CSS : LINK_CSS}`} onClick={() => scrollToSection('home')}>Home</a>
         <a className={`${activeLink === 'projects' ? ACTIVE_LINK_CSS : LINK_CSS}`} onClick={() => scrollToSection('projects')}>Projects</a>
         <a className={`${activeLink === 'skills' ? ACTIVE_LINK_CSS : LINK_CSS}`} onClick={() => scrollToSection('skills')}>Skills</a>
