@@ -4,7 +4,7 @@ import Typewriter from "./TypeWriter";
 function Home() {
   return (
     <section id="home" className="flex items-center justify-center min-h-screen bg-grey">
-      <div className="bg-lightGrey p-8 rounded-lg shadow-lg flex items-center">
+      <div className="bg-lightGrey p-8 rounded-lg shadow-lg flex items-center m-4">
         <img
           src={ProfilePicture}
           alt="Picture of Connor Morrison"

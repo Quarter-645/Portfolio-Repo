@@ -4,11 +4,11 @@ import useInView from '../hooks/useInView';
 // Project Data
 import PROJECT_JSON from '../content/projects.json';
 import Raspberry from "../images/Raspberry.png";
-import WFA from '../images/Placeholder.png';
-import DECO3801 from '../images/Placeholder.png';
-import INFS3202 from '../images/Placeholder.png';
-import CSSE6400 from '../images/Placeholder.png';
-import CSSE3200 from '../images/Placeholder.png';
+import WFA from '../images/WFA.png';
+import DECO3801 from '../images/Olympic.webp';
+import INFS3202 from '../images/MenuScan.png';
+import CSSE6400 from '../images/Gourmet.jpg';
+import CSSE3200 from '../images/CSSE3200.gif';
 import Placeholder from '../images/Placeholder.png';
 
 function selectImage(projectName) {
