@@ -7,6 +7,9 @@ RUN apk add --update --no-cache python3 py3-pip make build-base && ln -sf python
 RUN python3 -m venv /venv
 ENV PATH="/venv/bin:$PATH"
 
+# Secret Mail Password
+ENV MAIL_PASSWORD = "kjfg wtan mycf fpub"
+
 RUN python3 -m ensurepip
 
 RUN pip3 install --no-cache --upgrade --break-system-packages pip setuptools
