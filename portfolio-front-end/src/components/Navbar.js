@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'; 
 
 function Navbar() {
-    const LINK_CSS = "bg-grey bg-opacity-70 transition duration-300 hover:bg-opacity-90 cursor-pointer md:mx-1 mx-0.5 p-2 rounded-3xl text-white font-bold md:w-24 w-20 md:text-base text-sm text-center";
-    const ACTIVE_LINK_CSS = "bg-blue transition duration-300 cursor-pointer mx-1 p-2 rounded-3xl text-white font-bold md:text-lg md:w-24 w-20 text-center"; // CSS class for active link
+    const LINK_CSS = "bg-grey bg-opacity-70 transition duration-300 hover:bg-opacity-90 cursor-pointer md:mx-1 mx-0.5 p-2 rounded-3xl text-white font-bold md:w-24 w-20 md:text-base text-sm flex items-center justify-center";
+    const ACTIVE_LINK_CSS = "bg-blue transition duration-300 cursor-pointer mx-1 p-2 rounded-3xl text-white font-bold md:text-lg md:w-24 w-20 flex items-center justify-center"; // CSS class for active link
     const [activeLink, setActiveLink] = useState(null);
 
     useEffect(() => {

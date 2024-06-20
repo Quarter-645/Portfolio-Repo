@@ -3,36 +3,11 @@ import useInView from '../hooks/useInView';
 
 // Project Data
 import PROJECT_JSON from '../content/projects.json';
-import Raspberry from "../images/Raspberry.png";
-import WFA from '../images/WFA.png';
-import DECO3801 from '../images/Olympic.webp';
-import INFS3202 from '../images/MenuScan.png';
-import CSSE6400 from '../images/Gourmet.jpg';
-import CSSE3200 from '../images/CSSE3200.gif';
 import Placeholder from '../images/Placeholder.png';
 
-function selectImage(projectName) {
-    switch (projectName) {
-        case "RaspberryPiServer":
-            return Raspberry;
-        case "WFA":
-            return WFA;
-        case "DECO3801":
-            return DECO3801;
-        case "INFS3202":
-            return INFS3202;
-        case "CSSE6400":
-            return CSSE6400;
-        case "CSSE3200":
-            return CSSE3200;
-        default:
-            return Placeholder;
-    }
-}
-
-function ProjectCard({ projectName }) {
+function ProjectCard({ projectName, image }) {
     const [ref, isInView] = useInView(0.5);
-    const IMAGE = selectImage(projectName);
+    image = !image ? Placeholder : image;
     const PROJECT = PROJECT_JSON[projectName];
     const BUTTON_CSS = "bg-blue transition duration-300 opacity-80 hover:opacity-100 cursor-pointer m-4 p-2 rounded-xl text-white font-bold w-24 text-center";
     
@@ -52,7 +27,7 @@ function ProjectCard({ projectName }) {
                     </div>
                 </div>
                 <img 
-                    src={IMAGE}
+                    src={image}
                     alt={PROJECT.imageAlt}
                     className="rounded-lg w-32 h-32 lg:w-64 lg:h-64 m-4 object-contain order-first"
                 />
