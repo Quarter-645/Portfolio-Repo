@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'; 
 
 function Navbar() {
-    const LINK_CSS = "bg-grey bg-opacity-70 transition duration-300 hover:bg-opacity-90 cursor-pointer md:mx-1 mx-0.5 p-2 rounded-3xl text-white font-bold md:w-24 w-20 md:text-base text-sm flex items-center justify-center";
+    const LINK_CSS = "transition duration-300 hover:bg-blue cursor-pointer md:mx-1 mx-0.5 p-2 rounded-3xl text-white font-bold md:w-24 w-20 md:text-base text-sm flex items-center justify-center";
     const ACTIVE_LINK_CSS = "bg-blue transition duration-300 cursor-pointer mx-1 p-2 rounded-3xl text-white font-bold md:text-lg md:w-24 w-20 flex items-center justify-center"; // CSS class for active link
     const [activeLink, setActiveLink] = useState(null);
 
@@ -18,7 +18,6 @@ function Navbar() {
         
                 if (scrollPosition >= top && scrollPosition < top + height) {
                     setActiveLink(section.id);
-                    // console.log('Active Section:', activeLink);
                 }
             });
         };
@@ -40,7 +39,7 @@ function Navbar() {
     };
 
     return (
-      <div className="bg-lightGrey rounded-3xl p-1 flex fixed top-4 left-1/2 -translate-x-1/2 z-50 border border-grey">
+      <div className="bg-grey rounded-3xl p-1 flex fixed top-4 left-1/2 -translate-x-1/2 z-50 border-2 border-dark">
         <a className={`${activeLink === 'home' ? ACTIVE_LINK_CSS : LINK_CSS}`} onClick={() => scrollToSection('home')}>Home</a>
         <a className={`${activeLink === 'projects' ? ACTIVE_LINK_CSS : LINK_CSS}`} onClick={() => scrollToSection('projects')}>Projects</a>
         <a className={`${activeLink === 'skills' ? ACTIVE_LINK_CSS : LINK_CSS}`} onClick={() => scrollToSection('skills')}>Skills</a>

@@ -46,7 +46,7 @@ const words = [
 
     return (
         <div className='typewriter'>
-            <h2 className="text-2xl text-black">A {displayedText}<span className="cursor">&nbsp;</span></h2>
+            <h2 className="text-2xl text-white">A {displayedText}<span className="cursor">&nbsp;</span></h2>
         </div>
     );
     };

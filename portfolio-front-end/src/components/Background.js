@@ -31,7 +31,7 @@ const Background = () => {
     () => ({
       background: {
         color: {
-          value: "#1E1E1E",
+          value: "#101010",
         },
       },
       fpsLimit: 120,

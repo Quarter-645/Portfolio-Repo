@@ -18,12 +18,8 @@ function ProjectCard({ projectName, image }) {
                     <h2 className="text-3xl font-bold text-white">{PROJECT.name}</h2>
                     <p className="text-white line-clamp-4">{PROJECT.text}</p>
                     <div className="flex mt-4">
-                        <button className={BUTTON_CSS}>
-                            More Info
-                        </button>
-                        <button className={BUTTON_CSS}>
-                            GitHub
-                        </button>
+                        {PROJECT.link != "" ? <a target="_blank" href={PROJECT.link} className={BUTTON_CSS}>Live Demo</a> : <></>}
+                        {PROJECT.gitHub != "" ? <a target="_blank" href={PROJECT.gitHub} className={BUTTON_CSS}>GitHub</a> : <></>} 
                     </div>
                 </div>
                 <img 
