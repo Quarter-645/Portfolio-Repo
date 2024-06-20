@@ -36,22 +36,13 @@ const Background = () => {
       },
       fpsLimit: 120,
       interactivity: {
-        events: {
-          onClick: {
-            enable: true,
-            mode: "push",
-          },
-          onHover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
+        events: {},
         modes: {
           push: {
             quantity: 4,
           },
           repulse: {
-            distance: 200,
+            distance: 120,
             duration: 0.4,
           },
         },
