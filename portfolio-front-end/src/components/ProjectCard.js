@@ -17,7 +17,7 @@ function ProjectCard({ projectName, image }) {
     };
 
     return (
-        <div className={`flex items-center justify-center p-4 transform transition-transform    duration-1000 ${isInView ? 'scale-100' : 'scale-50'}`} ref={ref}>
+        <div className={`flex items-center justify-center p-4 transform transition-transform duration-1000 ${isInView ? 'scale-100' : 'scale-50'}`} ref={ref}>
             <div className="bg-grey py-4 px-6 rounded-lg shadow-lg flex flex-col lg:flex-row items-center max-w-full md:max-w-6xl">
                 <div className="ml-4">
                     <h2 className="text-3xl font-bold text-white">{PROJECT.name}</h2>

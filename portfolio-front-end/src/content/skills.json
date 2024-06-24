@@ -1,0 +1,38 @@
+{
+    "Full-Stack Web Development" : {
+        "name" : "Full-Stack Web Development",
+        "description" : ""
+    },
+    "Cloud Computing" : {
+        "name" : "Cloud Computing",
+        "description" : ""
+    },
+    "RESTful API Development" : {
+        "name" : "RESTful API Development",
+        "description" : ""
+    },
+    "Software Architecture" : {
+        "name" : "Software Architecture",
+        "description" : ""
+    },
+    "Containerisation" : {
+        "name" : "Containerisation",
+        "description" : ""
+    },
+    "Object Oriented Programming" : {
+        "name" : "Object Oriented Programming",
+        "description" : ""
+    },
+    "Testing" : {
+        "name" : "Testing",
+        "description" : ""
+    },
+    "Problem Solving" : {
+        "name" : "Problem Solving",
+        "description" : ""
+    },
+    "Cyber Security" : {
+        "name" : "Cyber Security",
+        "description" : ""
+    }
+}
