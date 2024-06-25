@@ -3,7 +3,7 @@ import skills from '../content/skills.json';
 import useInView from '../hooks/useInView';
 
 function GeneralSkills() {
-    const [activeIndex, setActiveIndex] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(0);
     const [ref, isInView] = useInView(0.5);
 
     const toggleAccordion = (index) => {
@@ -15,9 +15,9 @@ function GeneralSkills() {
             <h1 className="text-4xl font-bold mb-6 text-white text-center">Skills</h1>
             <div className="w-full">
                 {Object.keys(skills).map((key, index) => (
-                    <div key={index} className="mb-4">
+                    <div key={index}>
                         <button
-                            className={`w-full text-left py-2 px-4 text-white font-bold transition duration-300 hover:bg-blue ${activeIndex === index ? 'rounded-t-lg' : 'rounded-lg'}`}
+                            className={`w-full text-left py-2 px-4 text-white text-center font-bold transition duration-300 hover:bg-blue hover:bg-opacity-60 ${activeIndex === index ? 'rounded-t-lg bg-blue text-xl hover:bg-opacity-100' : 'rounded-lg text-lg'}`}
                             onClick={() => toggleAccordion(index)}
                         >
                             {skills[key].name}
@@ -26,7 +26,7 @@ function GeneralSkills() {
                             className={`overflow-hidden transition-max-height duration-300 ease-in-out ${activeIndex === index ? 'max-h-40' : 'max-h-0'}`}
                         >
                             <div className="p-4 bg-lightGrey text-black rounded-b-lg">
-                                <p>{skills[key].description} detailed description goes here.</p>
+                                <p>{skills[key].description}</p>
                             </div>
                         </div>
                     </div>
