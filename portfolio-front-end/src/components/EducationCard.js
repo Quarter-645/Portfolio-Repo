@@ -21,7 +21,7 @@ function EducationCard({ credentialName, image }) {
                 <img
                     src={image}
                     alt={CREDENTIAL.imageAlt}
-                    className="rounded-lg w-32 h-32 lg:w-64 lg:h-64 m-4 object-contain order-first"
+                    className="rounded-lg h-32 lg:w-64 lg:h-64 m-4 object-contain order-first"
                 />
             </div>
         </div>

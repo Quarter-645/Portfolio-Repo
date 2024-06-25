@@ -18,7 +18,7 @@ function Projects() {
     ];
 
     return (
-        <section id="projects" className="flex flex-col items-center justify-center">
+        <section id="projects" className="flex flex-col items-center justify-center p-16">
             {PROJECTS.map((project, index) => (
                 <ProjectCard 
                     key={index} 

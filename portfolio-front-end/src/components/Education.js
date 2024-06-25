@@ -20,7 +20,7 @@ const CREDENTIALS = [
 
 function Education() {
     return (
-        <section id="education" className="flex items-center justify-center min-h-screen flex-wrap">
+        <section id="education" className="flex items-center justify-center min-h-screen flex-wrap p-16">
             {CREDENTIALS.map((credential, index) => (
                 <EducationCard
                     key={index}

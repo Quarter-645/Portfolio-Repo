@@ -11,13 +11,13 @@ function GeneralSkills() {
     };
 
     return (
-        <div className={`bg-grey p-4 rounded-lg md:max-w-6xl transform transition-transform duration-1000 mt-8 ${isInView ? 'scale-100' : 'scale-50'}`}  ref={ref}>
+        <div className={`bg-grey p-4 rounded-lg md:max-w-6xl transform transition-transform duration-1000 ${isInView ? 'scale-100' : 'scale-50'}`}  ref={ref}>
             <h1 className="text-4xl font-bold mb-6 text-white text-center">Skills</h1>
             <div className="w-full">
                 {Object.keys(skills).map((key, index) => (
                     <div key={index}>
                         <button
-                            className={`w-full text-left py-2 px-4 text-white text-center font-bold transition duration-300 hover:bg-blue hover:bg-opacity-60 ${activeIndex === index ? 'rounded-t-lg bg-blue text-xl hover:bg-opacity-100' : 'rounded-lg text-lg'}`}
+                            className={`w-full py-2 px-4 text-white text-center font-bold transition duration-300 hover:bg-blue hover:bg-opacity-60 ${activeIndex === index ? 'rounded-t-lg bg-blue text-xl hover:bg-opacity-100' : 'rounded-lg text-lg'}`}
                             onClick={() => toggleAccordion(index)}
                         >
                             {skills[key].name}
