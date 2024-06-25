@@ -23,7 +23,7 @@ function GeneralSkills() {
                             {skills[key].name}
                         </button>
                         <div
-                            className={`overflow-hidden transition-max-height duration-300 ease-in-out ${activeIndex === index ? 'max-h-40' : 'max-h-0'}`}
+                            className={`overflow-hidden transition-max-height duration-300 ease-in-out ${activeIndex === index ? 'max-h-96' : 'max-h-0'}`}
                         >
                             <div className="p-4 bg-lightGrey text-black rounded-b-lg">
                                 <p>{skills[key].description}</p>

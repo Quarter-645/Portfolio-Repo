@@ -1,11 +1,11 @@
 import ProjectCard from "./ProjectCard";
 
-import Raspberry from "../images/Raspberry.png";
-import WFA from '../images/WFA.png';
-import DECO3801 from '../images/Olympic.webp';
-import INFS3202 from '../images/MenuScan.png';
-import CSSE6400 from '../images/Gourmet.jpg';
-import CSSE3200 from '../images/CSSE3200.gif';
+import Raspberry from "../images/projects/Raspberry.png";
+import WFA from '../images/projects/WFA.png';
+import DECO3801 from '../images/projects/Olympic.webp';
+import INFS3202 from '../images/projects/MenuScan.png';
+import CSSE6400 from '../images/projects/Gourmet.jpg';
+import CSSE3200 from '../images/projects/CSSE3200.gif';
 
 function Projects() {
     const PROJECTS = [
