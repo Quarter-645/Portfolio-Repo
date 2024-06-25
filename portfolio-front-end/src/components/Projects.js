@@ -6,7 +6,6 @@ import DECO3801 from '../images/Olympic.webp';
 import INFS3202 from '../images/MenuScan.png';
 import CSSE6400 from '../images/Gourmet.jpg';
 import CSSE3200 from '../images/CSSE3200.gif';
-import Placeholder from '../images/Placeholder.png';
 
 function Projects() {
     const PROJECTS = [
@@ -19,7 +18,7 @@ function Projects() {
     ];
 
     return (
-        <section id="projects" className="flex flex-col items-center justify-center bg-lightGrey">
+        <section id="projects" className="flex flex-col items-center justify-center">
             {PROJECTS.map((project, index) => (
                 <ProjectCard 
                     key={index} 

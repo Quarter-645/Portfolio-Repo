@@ -1,0 +1,33 @@
+{
+    "Tools" : [
+        "Python",
+        "Java",
+        "PHP",
+        "C Sharp",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "SQL",
+        "C",
+        "RStudio",
+        "React Native",
+        "VueJS",
+        "Flask",
+        "NodeJS",
+        "DotNet",
+        "Bootstrap",
+        "TailwindCSS",
+        "React",
+        "Linux",
+        "Terraform",
+        "Docker",
+        "Amazon Web Services",
+        "NGINX",
+        "Microsoft SQL Server",
+        "SQLite",
+        "PostgreSQL",
+        "MySQL",
+        "Git",
+        "Figma"
+    ]
+}
