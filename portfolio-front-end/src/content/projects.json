@@ -1,0 +1,45 @@
+{
+    "RaspberryPiServer" : {
+        "name" : "Raspberry Pi Web Server",
+        "text" : "This is a custom built web server designed to host a portfolio of projects to showcase to employers. It was designed mindfully with a microservices architecture as to ensure modularity and maintainability allowing for the easy addition of future projects. The tech stack it is built on is NGINX, Docker, React, TailwindCSS, Flask, and SQLite. It currently hosts a range of projects for you to try out, you can see some of them linked with a \"try me\" button below!",
+        "image" : "Raspberry",
+        "imageAlt" : "The Raspberry Pi Logo",
+        "gitHub" : "https://github.com/Quarter-645/Portfolio-Repo/",
+        "link": ""
+    }, "WFA" : {
+		"name" : "Workforce Australia Website",
+        "text" : "As a developer in the Department of Employment and Workplace Relations, I maintained and deployed numerous components for the Workforce Australia website, engaging in full-stack development. This role provided valuable experience with technologies such as .NET for developing APIs and VueJS for crafting front-end elements, enhancing my skills in both back-end and front-end development.",
+        "image" : "WFA",
+        "imageAlt" : "Workforce Australia Logo",
+        "gitHub" : "",
+        "link": "https://www.workforceaustralia.gov.au/individuals/"
+	}, "DECO3801" : {
+        "name" : "2032 Olympic XR Interactive Experience",
+        "text" : "While enrolled in DECO3801 at the esteemed University of Queensland, I collaborated with a talented group of developers to create an immersive Extended Reality (XR) experience aimed at heightening the excitement of ticket purchasers for the forthcoming Brisbane 2032 Olympics. In this innovative project, I played a pivotal role in the strategic design and seamless implementation of the dedicated website, which served as the primary platform for hosting and promoting our cutting-edge XR experience. My responsibilities included utilizing technologies such as Bootstrap, Node.js, CSS, React, Python, and JavaScript to enhance the website's accessibility and reach, ensuring a robust and engaging user experience.",
+        "image" : "DECO3801",
+        "imageAlt" : "The Olympic Rings",
+        "gitHub" : "https://github.com/Ethan-Gough/DECO3801-Olympic-Customer-Journey",
+        "link": ""
+    }, "INFS3202" : {
+		"name" : "MenuScan",
+        "text" : "As part of my coursework in the Web Information Systems (INFS3202) course at the University of Queensland, I developed 'MenuScan,' a Software as a Service (SaaS) platform designed to streamline the ordering process for restaurants, cafes, and coffee shops. MenuScan enables businesses to create and manage digital menus and automatically generate unique QR codes for each table, allowing guests to access menus and place orders directly from their smartphones. Built using PHP with the CodeIgniter framework and following the Model-View-Controller (MVC) architecture. The platform features a user-friendly interface for staff to view and manage orders in real-time, ensuring a smooth dining experience. I implemented a robust backend system using MySQL for menu creation, QR code generation, and real-time order management, while the front-end was developed with HTML, CSS, and JavaScript for an intuitive and responsive design. Key functionalities included secure user authentication, role-based access control, and data validation to enhance security and usability. Successfully deployed on UQCloud, MenuScan demonstrated my skills in web development, database management, and software deployment, offering practical solutions to improve operational efficiency and customer experience in the foodservice industry.",
+        "image" : "INFS3202",
+        "imageAlt" : "A dummy QRCode",
+        "gitHub" : "",
+        "link": ""
+	}, "CSSE6400" : {
+		"name" : "Gourmet",
+        "text" : "I am excited to share my capstone project, Gourmet, an innovative cooking application designed to transform how food enthusiasts create and enjoy recipes. Developed as part of the CSSE6400 course, Gourmet leverages modern technologies to provide a seamless and interactive cooking experience. The application features a dynamic front-end built with React and a robust back-end powered by the Flask API framework. It integrates Elasticsearch to deliver fast and efficient search capabilities, allowing users to quickly find recipes based on ingredients, country of origin, and dietary restrictions. Gourmet includes a comprehensive, user-friendly recipe database where users can search, filter, and sort recipes by various criteria such as popularity and relevance. It also offers advanced user interactions, including the ability to like, save, and comment on recipes, along with step-by-step cooking instructions featuring optional images and tags to guide users through the cooking process. Our team prioritized scalability, security, and reliability, choosing a microservices architecture to enable independent development, deployment, and scaling of services, thereby enhancing performance and maintainability. Gourmet is more than just a recipe app; it's a platform that fosters a community of food lovers, making it easier for users to discover and share their culinary creations. Feel free to connect with me to learn more about this exciting project and my journey in creating it!",
+        "image" : "CSSE6400",
+        "imageAlt" : "A Picture of Food",
+        "gitHub" : "",
+        "link": ""
+	}, "CSSE3200" : {
+		"name" : "Gardens of the Galaxy",
+        "text" : "During my enrolment in the rigorous CSSE3200 program, I had the privilege of collaborating with an extensive team of approximately 40 skilled developers to create a sophisticated and distinctive Java-based game that embodied the pinnacle of quality and comprehensiveness. In this dynamic environment, I frequently assumed the role of a proactive leader, spearheading and orchestrating numerous group meetings to ensure cohesion and productivity among team members. Simultaneously, I maintained a consistent and substantial presence in our Git repository, actively contributing to the project's continuous evolution and refinement. This experience allowed me to hone my skills in Java, GitHub, IntelliJ IDEA, testing, and overall software development.",
+        "image" : "CSSE3200",
+        "imageAlt" : "A image from the Gardens of the Galaxy Game",
+        "gitHub" : "https://github.com/UQcsse3200/2023-studio-1",
+        "link": ""
+	}
+}

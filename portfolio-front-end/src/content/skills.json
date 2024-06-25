@@ -1,0 +1,38 @@
+{
+    "Full-Stack Web Development" : {
+        "name" : "Full-Stack Web Development",
+        "description" : "Full-Stack Web Development involves working on both the front-end and back-end portions of an application. I demonstrated this skill in the Workforce Australia Website project, where I maintained and deployed numerous components, engaging in full-stack development with .NET for the back-end and VueJS for the front-end. Additionally, the Raspberry Pi Web Server project showcased my ability to build a complete web solution using technologies like NGINX, Docker, React, TailwindCSS, Flask, and SQLite."
+    },
+    "Cloud Computing" : {
+        "name" : "Cloud Computing",
+        "description" : "Cloud Computing refers to the delivery of computing services over the internet. In the MenuScan project, I successfully deployed the platform on UQCloud, demonstrating my capability to use cloud services for hosting and managing web applications. Further I have experience deploying RESTful APIs to Amazon Web Services in my Software Architecture course."
+    },
+    "RESTful API Development" : {
+        "name" : "RESTful API Development",
+        "description" : "RESTful API Development involves creating APIs that adhere to the REST architecture principles, which are used to enable communication between different parts of a web application. In the Workforce Australia Website project, I developed APIs using .NET, and in the Gourmet project, I built the back-end using the Flask API framework."
+    },
+    "Software Architecture" : {
+        "name" : "Software Architecture",
+        "description" : "Software Architecture is the high-level structure of a software system, encompassing the design and implementation of its components. The Raspberry Pi Web Server project was designed with a microservices architecture to ensure modularity and maintainability. Similarly, the Gourmet project employed a model-view-controller architecture through CodeIgniter."
+    },
+    "Containerisation" : {
+        "name" : "Containerisation",
+        "description" : "Containerisation involves encapsulating an application and its dependencies into a container that can run consistently across different computing environments. I utilised Docker for containerisation in the Raspberry Pi Web Server project, ensuring consistent deployment and easier management of services. Also, Gourmet was deployed using Docker Compose to deploy it's various dependencies."
+    },
+    "Object Oriented Programming" : {
+        "name" : "Object Oriented Programming",
+        "description" : "Object Oriented Programming (OOP) is a programming paradigm based on the concept of objects. I demonstrated my proficiency in OOP during the Gardens of the Galaxy project, where I developed a sophisticated Java-based game using OOP principles in Java. MenuScan was also built on OOP principles for the model and controller code."
+    },
+    "Testing" : {
+        "name" : "Testing",
+        "description" : "Testing is the process of evaluating a system or its components to ensure they function as intended. In the Gardens of the Galaxy project, I actively contributed to the project's continuous evolution and refinement, which included rigorous testing to maintain high-quality standards. Furthermore, I have professional experience testing and writing test cases for the Workforce Australia website."
+    },
+    "Problem Solving" : {
+        "name" : "Problem Solving",
+        "description" : "Problem Solving involves identifying, analyzing, and resolving issues efficiently. Throughout all my projects, including the Olympic XR Interactive Experience and MenuScan, I tackled various technical challenges, demonstrating strong problem-solving skills by implementing effective and innovative solutions, this was shown as we developed our own entrepreneurial ideas from scratch."
+    },
+    "Cyber Security" : {
+        "name" : "Cyber Security",
+        "description" : "Cyber Security encompasses practices to protect systems, networks, and programs from digital attacks. In the MenuScan project, I implemented secure user authentication, role-based access control, and data validation to enhance security and usability, ensuring the platform was protected against potential threats. Furthermore, my Google Cyber Security certificate has given me a education in analyst style positions."
+    }
+}
