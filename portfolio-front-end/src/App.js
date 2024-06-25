@@ -2,7 +2,6 @@ import './App.css';
 import Background from './components/Background.js';
 import Home from './components/Home.js';
 import Navbar from './components/Navbar.js';
-import Placeholder from './components/Placeholder.js';
 import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
 import Education from './components/Education.js';
