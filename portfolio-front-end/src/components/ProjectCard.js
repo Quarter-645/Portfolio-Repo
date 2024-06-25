@@ -10,7 +10,7 @@ function ProjectCard({ projectName, image }) {
     const [showFullText, setShowFullText] = useState(false);
     image = !image ? Placeholder : image;
     const PROJECT = PROJECT_JSON[projectName];
-    const BUTTON_CSS = "bg-blue transition duration-300 opacity-80 hover:opacity-100 cursor-pointer m-4 p-2 rounded-xl text-white font-bold text-center";
+    const BUTTON_CSS = "bg-blue transition duration-300 opacity-80 hover:opacity-100 cursor-pointer m-4 p-2 rounded-xl text-white font-bold text-center flex items-center justify-center";
 
     const toggleFullText = () => {
         setShowFullText(!showFullText);

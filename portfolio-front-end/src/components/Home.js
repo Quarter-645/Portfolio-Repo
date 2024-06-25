@@ -12,7 +12,7 @@ function Home() {
         />
         <div>
           <h3 className="text-xl text-white">Hi I'm</h3>
-          <h1 className="text-3xl font-bold text-white">Connor Morrison</h1>
+          <h1 className="text-4xl font-bold text-white">Connor Morrison</h1>
           <Typewriter />
         </div>
       </div>

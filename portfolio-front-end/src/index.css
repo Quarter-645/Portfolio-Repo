@@ -10,7 +10,7 @@
 .cursor {
     display: inline-block;
     width: 2px;
-    background-color: black;
+    background-color: white;
     animation: blink 1s infinite;
 }
   
