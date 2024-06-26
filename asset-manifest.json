@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Repo/static/css/main.316a9438.css",
-    "main.js": "/Portfolio-Repo/static/js/main.80d4075d.js",
+    "main.js": "/Portfolio-Repo/static/js/main.be043fc5.js",
     "static/js/453.0581b6a8.chunk.js": "/Portfolio-Repo/static/js/453.0581b6a8.chunk.js",
     "static/media/Flask.png": "/Portfolio-Repo/static/media/Flask.67bfd45695cb468b194e.png",
     "static/media/Linux.png": "/Portfolio-Repo/static/media/Linux.ad6e4b06906b0633e222.png",
@@ -27,24 +27,24 @@
     "static/media/React Native.png": "/Portfolio-Repo/static/media/React Native.5e4910454141c82b05eb.png",
     "static/media/React.png": "/Portfolio-Repo/static/media/React.50f5174319b9d6474d5f.png",
     "static/media/C.png": "/Portfolio-Repo/static/media/C.bbbbbabc8c191bfb99bf.png",
-    "static/media/UQ.svg": "/Portfolio-Repo/static/media/UQ.d739fc64df2700a6620295620e7a05f4.svg",
+    "static/media/UQ.svg": "/Portfolio-Repo/static/media/UQ.2fe3d6ac88478a47a7bd7d3b1c1f64d4.svg",
     "static/media/ProfilePicture.jfif": "/Portfolio-Repo/static/media/ProfilePicture.cabec16116d6cfecad7a.jfif",
     "static/media/Java.png": "/Portfolio-Repo/static/media/Java.a43827b91279d9654354.png",
     "static/media/Mozilla.png": "/Portfolio-Repo/static/media/Mozilla.9f5c8bad749f50c20d3c.png",
     "static/media/NodeJS.png": "/Portfolio-Repo/static/media/NodeJS.a944ef19fe84ba7371f2.png",
     "static/media/OpenEDG.jpg": "/Portfolio-Repo/static/media/OpenEDG.3b04feffe1e976cc93a0.jpg",
     "static/media/Google.webp": "/Portfolio-Repo/static/media/Google.a05d721bb9bba483749f.webp",
-    "static/media/SQL.svg": "/Portfolio-Repo/static/media/SQL.69052411244dc12d5eb1.svg",
-    "static/media/RStudio.svg": "/Portfolio-Repo/static/media/RStudio.af7428347bc33f5e2fa6.svg",
-    "static/media/DotNet.svg": "/Portfolio-Repo/static/media/DotNet.b4a1f214e0667e233ce6.svg",
-    "static/media/NGINX.svg": "/Portfolio-Repo/static/media/NGINX.de99e85c3105c3885dd2.svg",
+    "static/media/SQL.svg": "/Portfolio-Repo/static/media/SQL.43dbeb68a25409834bc3.svg",
+    "static/media/RStudio.svg": "/Portfolio-Repo/static/media/RStudio.cfa69d12d6548d020c8c.svg",
+    "static/media/DotNet.svg": "/Portfolio-Repo/static/media/DotNet.18c10050cdc904fbb081.svg",
+    "static/media/NGINX.svg": "/Portfolio-Repo/static/media/NGINX.9ac85f02ed48e006fc89.svg",
     "index.html": "/Portfolio-Repo/index.html",
     "main.316a9438.css.map": "/Portfolio-Repo/static/css/main.316a9438.css.map",
-    "main.80d4075d.js.map": "/Portfolio-Repo/static/js/main.80d4075d.js.map",
+    "main.be043fc5.js.map": "/Portfolio-Repo/static/js/main.be043fc5.js.map",
     "453.0581b6a8.chunk.js.map": "/Portfolio-Repo/static/js/453.0581b6a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.316a9438.css",
-    "static/js/main.80d4075d.js"
+    "static/js/main.be043fc5.js"
   ]
 }
