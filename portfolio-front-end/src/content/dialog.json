@@ -1,0 +1,44 @@
+{
+    "Employer": {
+        "1": {
+            "Question": "Oh really? Well tell me have you been impressed by this adventurer's efforts?",
+            "1": "Yes, I loved the website",
+            "2": "It could use improvement",
+            "3": "I expected better"
+        },
+        "2": {
+            "Question": "Thank you for your feedback. So, what do you want to do next?",
+            "1": "I'd like to contact this adventurer",
+            "2": "I'll move on to the next adventurer"
+        },
+        "3": {
+            "Question": "Well please enjoy your journey, thank you for coming by."
+        }
+    },
+    "Technologist": {
+        "1": {
+            "Question": "Terrific! It is always good to have a peer visit, please tell me how have you found this adventurer's efforts?",
+            "1": "I loved it!",
+            "2": "It has inspired me to make my own portfolio!",
+            "3": "I think there is some room for improvement"
+        },
+        "2": {
+            "Question": "Thank you for your feedback, it all really does help! Hey, would you like to get in touch about some of my work?",
+            "1": "I'd be interested, how can I contact you?",
+            "2": "No thank you, I think I'll continue on my own journey"
+        },
+        "3": {
+            "Question": "Please take your rest, you have earnt it."
+        }
+    },
+    "Wanderer": {
+        "1": {
+            "Question": "It can be a long journey for an explorer such as yourself. Please tell me how have you found this adventurer's efforts?",
+            "1": "I loved the website",
+            "2": "It was tiring, I think I'm just about ready to leave"
+        },
+        "2": {
+            "Question": "Thank you for your feedback. I'm glad you took the time to explore through here. Please take your rest."
+        }
+    }
+}
