@@ -2,13 +2,14 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import os
+import logging
 
 class EmailSender:
     def __init__(self, body):
         self.smtp_server = 'smtp.gmail.com'
         self.smtp_port = 587
         self.sender_email = 'connormorrisondevelopment@gmail.com'
-        self.sender_password = os.environ['MAIL_PASSWORD']
+        self.sender_password = os.environ.get('MAIL_PASSWORD')
         self.recipient_email = 'connormorrisondevelopment@gmail.com'
         self.subject = 'Someone Replied to the Form!'
         self.body = body
@@ -35,6 +36,11 @@ class EmailSender:
 
             # Terminate the SMTP session
             server.quit()
+            logging.info("Email sent successfully")
 
         except Exception as e:
-            print(f"Failed to send email: {e}")
+            logging.error(f"Failed to send email: {e}")
+            raise
+
+if __name__ == '__main__':
+    logging.basicConfig(level=logging.INFO)

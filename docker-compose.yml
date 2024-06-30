@@ -9,6 +9,10 @@ services:
       - ./game-service:/app
     networks:
       - my-network
+    secrets:
+      - mail_password
+    environment:
+      MAIL_PASSWORD_FILE: /run/secrets/mail_password
 
   front-end:
     build:
@@ -23,3 +27,7 @@ services:
 networks:
   my-network:
     driver: bridge
+
+secrets:
+  mail_password:
+    file: ./mail_password.txt

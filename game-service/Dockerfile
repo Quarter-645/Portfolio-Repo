@@ -7,20 +7,20 @@ RUN apk add --update --no-cache python3 py3-pip make build-base && ln -sf python
 RUN python3 -m venv /venv
 ENV PATH="/venv/bin:$PATH"
 
-# Secret Mail Password
-ENV MAIL_PASSWORD = "kjfg wtan mycf fpub"
-
 RUN python3 -m ensurepip
 
-RUN pip3 install --no-cache --upgrade --break-system-packages pip setuptools
-RUN pip3 install flask
-RUN pip3 install flask-cors
+RUN pip3 install --no-cache --upgrade pip setuptools
+RUN pip3 install flask flask-cors python-dotenv
 
 # Copy all files into container
 COPY . /app/.
+COPY .env /app/.env
 
 # Set the working directory
 WORKDIR /app
+
+# Load environment variables
+RUN set -a && source /app/.env && set +a
 
 # Expose the port (e.g., 8000)
 EXPOSE 8000
