@@ -1,0 +1,25 @@
+# docker-compose.yml
+services:
+  game-service:
+    build:
+      context: ./game-service
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./game-service:/app
+    networks:
+      - my-network
+
+  front-end:
+    build:
+      context: ./portfolio-front-end
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./portfolio-front-end:/app
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
