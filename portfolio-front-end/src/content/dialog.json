@@ -1,44 +1,75 @@
 {
+    "start": {
+        "text": "Hey there, mind if we take a minute to chat? What brought you to my portfolio?",
+        "options": [
+            { "text": "I'm looking to recruit members to my team", "next": "Employer" },
+            { "text": "I'm a fellow technologist", "next": "Technologist" },
+            { "text": "I'm just exploring", "next": "Wanderer" }
+        ]
+    },
     "Employer": {
-        "1": {
-            "Question": "Oh really? Well tell me have you been impressed by this adventurer's efforts?",
-            "1": "Yes, I loved the website",
-            "2": "It could use improvement",
-            "3": "I expected better"
-        },
-        "2": {
-            "Question": "Thank you for your feedback. So, what do you want to do next?",
-            "1": "I'd like to contact this adventurer",
-            "2": "I'll move on to the next adventurer"
-        },
-        "3": {
-            "Question": "Well please enjoy your journey, thank you for coming by."
-        }
+        "text": "That's awesome, thanks for checking out my portfolio. Did you enjoy it?",
+        "options": [
+            { "text": "Yes, I loved the website", "next": "EmployerLiked" },
+            { "text": "I didn't really enjoy it", "next": "EmployerDisliked" }
+        ]
+    },
+    "EmployerLiked": {
+        "text": "That's awesome, I'm really glad you liked it! Do you want to get in touch and discuss some of my work?",
+        "options": [
+            { "text": "Yes, that would be great!", "next": "ContactMe" },
+            { "text": "No thank you", "next": "DoNotContactMe" }
+        ]
+    },
+    "EmployerDisliked": {
+        "text": "Well thank you for the feedback, would you like to get in touch about some improvements?",
+        "options": [
+            { "text": "Yes, I think I can offer some feedback!", "next": "ContactMe" },
+            { "text": "I'm alright thank you!", "next": "DoNotContactMe" }
+        ]
     },
     "Technologist": {
-        "1": {
-            "Question": "Terrific! It is always good to have a peer visit, please tell me how have you found this adventurer's efforts?",
-            "1": "I loved it!",
-            "2": "It has inspired me to make my own portfolio!",
-            "3": "I think there is some room for improvement"
-        },
-        "2": {
-            "Question": "Thank you for your feedback, it all really does help! Hey, would you like to get in touch about some of my work?",
-            "1": "I'd be interested, how can I contact you?",
-            "2": "No thank you, I think I'll continue on my own journey"
-        },
-        "3": {
-            "Question": "Please take your rest, you have earnt it."
-        }
+        "text": "Terrific! It is always good to have a peer visit, please tell me how have you my portfolio?",
+        "options": [
+            { "text": "I loved it!", "next": "TechnologistLiked" },
+            { "text": "I think it could be better", "next": "TechnologistDisliked" }
+        ]
+    },
+    "TechnologistLiked": {
+        "text": "Thank you for your kind words! Hey, would you like to get in touch about some of my work?",
+        "options": [
+            { "text": "I'd love to!", "next": "ContactMe" },
+            { "text": "I'll pass but good luck!", "next": "DoNotContactMe" }
+        ]
+    },
+    "TechnologistDisliked": {
+        "text": "That's fair enough, would you like to give me ideas of what I could improve on?",
+        "options": [
+            { "text": "Yes I think I could give some feedback!", "next": "ContactMe" },
+            { "text": "No I think I'll pass but best of luck!", "next": "DoNotContactMe" }
+        ]
     },
     "Wanderer": {
-        "1": {
-            "Question": "It can be a long journey for an explorer such as yourself. Please tell me how have you found this adventurer's efforts?",
-            "1": "I loved the website",
-            "2": "It was tiring, I think I'm just about ready to leave"
-        },
-        "2": {
-            "Question": "Thank you for your feedback. I'm glad you took the time to explore through here. Please take your rest."
-        }
+        "text": "Hey thanks for checking out my portfolio even if you are just surfing the web. Did you enjoy my the website?",
+        "options": [
+            { "text": "Yes, I thought it was good!", "next": "WandererLiked" },
+            { "text": "I didn't really enjoy it", "next": "WandererDisliked" }
+        ]
+    },
+    "WandererLiked": {
+        "text": "That's awesome, thanks for the feedback please feel free to check out anything else!",
+        "options": []
+    },
+    "WandererDisliked": {
+        "text": "Well thank you for the feedback, I hope you enjoyed some of my other projects though!",
+        "options": []
+    },
+    "ContactMe": {
+        "text": "If you look below you can get in touch with me via GitHub, LinkedIn or Email (connormorrisondevelopment@gmail.com). Thanks for taking the time to view my site!",
+        "options": []
+    },
+    "DoNotContactMe": {
+        "text": "Well either way I appreciate you stopping by!",
+        "options": []
     }
 }
