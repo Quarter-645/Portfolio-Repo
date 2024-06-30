@@ -14,6 +14,7 @@ RUN python3 -m ensurepip
 
 RUN pip3 install --no-cache --upgrade --break-system-packages pip setuptools
 RUN pip3 install flask
+RUN pip3 install flask-cors
 
 # Copy all files into container
 COPY . /app/.
