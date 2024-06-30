@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Repo/static/css/main.316a9438.css",
-    "main.js": "/Portfolio-Repo/static/js/main.be043fc5.js",
+    "main.css": "/Portfolio-Repo/static/css/main.17fc20e7.css",
+    "main.js": "/Portfolio-Repo/static/js/main.3b987a7c.js",
     "static/js/453.0581b6a8.chunk.js": "/Portfolio-Repo/static/js/453.0581b6a8.chunk.js",
     "static/media/Flask.png": "/Portfolio-Repo/static/media/Flask.67bfd45695cb468b194e.png",
     "static/media/Linux.png": "/Portfolio-Repo/static/media/Linux.ad6e4b06906b0633e222.png",
@@ -39,12 +39,12 @@
     "static/media/DotNet.svg": "/Portfolio-Repo/static/media/DotNet.18c10050cdc904fbb081.svg",
     "static/media/NGINX.svg": "/Portfolio-Repo/static/media/NGINX.9ac85f02ed48e006fc89.svg",
     "index.html": "/Portfolio-Repo/index.html",
-    "main.316a9438.css.map": "/Portfolio-Repo/static/css/main.316a9438.css.map",
-    "main.be043fc5.js.map": "/Portfolio-Repo/static/js/main.be043fc5.js.map",
+    "main.17fc20e7.css.map": "/Portfolio-Repo/static/css/main.17fc20e7.css.map",
+    "main.3b987a7c.js.map": "/Portfolio-Repo/static/js/main.3b987a7c.js.map",
     "453.0581b6a8.chunk.js.map": "/Portfolio-Repo/static/js/453.0581b6a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.316a9438.css",
-    "static/js/main.be043fc5.js"
+    "static/css/main.17fc20e7.css",
+    "static/js/main.3b987a7c.js"
   ]
 }
