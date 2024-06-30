@@ -1,72 +1,42 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import useInView from '../hooks/useInView';
-import DIALOG from '../content/dialog.json';
-
-const opening = {
-    "Question": "Hey there, tired from all your exploring? How about you rest and tell me a tale? What kind of adventure are you on?",
-    "Answer1": "I'm looking to recruit members to my team",
-    "Answer2": "I'm a fellow technologist",
-    "Answer3": "I'm just exploring"
-};
+import formData from '../content/dialog.json';
+import { sendSelectionHistory } from '../api/send_email';
 
 function FormCard() {
     const [ref, isInView] = useInView(0.5);
-    const [currentQuestion, setCurrentQuestion] = useState(opening);
-    const [dialogBranch, setDialogBranch] = useState(null);
-    const [questionIndex, setQuestionIndex] = useState(1);
+    const [currentStep, setCurrentStep] = useState('start');
+    const [selectionHistory, setSelectionHistory] = useState([]);
 
-    const handleOpeningAnswerClick = (answer) => {
-        let nextQuestion;
-        switch (answer) {
-            case "Answer1":
-                nextQuestion = DIALOG.Employer[1];
-                setDialogBranch('Employer');
-                break;
-            case "Answer2":
-                nextQuestion = DIALOG.Technologist[1];
-                setDialogBranch('Technologist');
-                break;
-            case "Answer3":
-                nextQuestion = DIALOG.Wanderer[1];
-                setDialogBranch('Wanderer');
-                break;
-            default:
-                return;
-        }
-        setCurrentQuestion(nextQuestion);
+    const handleOptionClick = (nextStep, selectedOption) => {
+        setCurrentStep(nextStep);
+        setSelectionHistory([...selectionHistory, { step: currentStep, selection: selectedOption }]);
     };
 
-    const handleDialogAnswerClick = () => {
-        let nextQuestionIndex = questionIndex + 1;
-        if (DIALOG[dialogBranch][nextQuestionIndex]) {
-            setCurrentQuestion(DIALOG[dialogBranch][nextQuestionIndex]);
-            setQuestionIndex(nextQuestionIndex);
-        } else {
-            // Handle the end of the dialog if needed
-            setCurrentQuestion({ Question: "Thank you for your feedback!" });
+    useEffect(() => {
+        if (!formData[currentStep].options.length) {
+            sendSelectionHistory(selectionHistory)
+                .then(result => console.log('Selection history sent successfully:', result))
+                .catch(error => console.error('Error sending selection history:', error));
         }
-    };
+    }, [currentStep, selectionHistory]);
 
-    const renderAnswers = (question) => {
-        const answers = [];
-        for (const key in question) {
-            if (key !== 'Question') {
-                answers.push(
-                    <button className="bg-blue text-white py-2 px-4 rounded-lg" key={key} onClick={() => dialogBranch ? handleDialogAnswerClick() : handleOpeningAnswerClick(key)}>
-                        {question[key]}
-                    </button>
-                );
-            }
-        }
-        return answers;
-    };
+    const { text, options } = formData[currentStep];
 
     return (
         <div className={`flex items-center justify-center p-4 transform transition-transform md:min-w-full duration-1000 ${isInView ? 'scale-100' : 'scale-50'}`} ref={ref}>
-            <div className="bg-grey py-4 px-6 rounded-lg shadow-lg flex flex-col lg:flex-row items-center max-w-full md:max-w-6xl">
-                <h2 className="text-xl text-white mb-4">{currentQuestion.Question}</h2>
+            <div className="bg-grey py-4 px-6 rounded-lg shadow-lg flex flex-col items-center max-w-full md:max-w-6xl">
+                <h2 className="text-xl text-center text-white mb-4">{text}</h2>
                 <div className="flex flex-col space-y-2">
-                    {renderAnswers(currentQuestion)}
+                    {options.map((option, index) => (
+                        <button
+                            key={index}
+                            onClick={() => handleOptionClick(option.next, option.text)}
+                            className="bg-blue opacity-80 transition duration-300 hover:opacity-100 hover:bg-blue text-white font-bold py-2 px-4 rounded"
+                        >
+                            {option.text}
+                        </button>
+                    ))}
                 </div>
             </div>
         </div>
