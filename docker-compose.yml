@@ -1,5 +1,15 @@
 # docker-compose.yml
 services:
+  api-gateway:
+    build: 
+      context: ./api-gateway
+    ports:
+      - "80:80"
+    depends_on:
+      - game-service
+    networks:
+      - my-network
+
   game-service:
     build:
       context: ./game-service
@@ -10,6 +20,7 @@ services:
     networks:
       - my-network
 
+  # Remove in PROD being hosted on GitHub Pages 
   front-end:
     build:
       context: ./portfolio-front-end
