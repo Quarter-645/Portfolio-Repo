@@ -2,7 +2,7 @@
   "name": "portfolio-front-end",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://quarter-645.github.io/Portfolio-Repo",
+  "homepage": "https://connormorrison.codes",
   "dependencies": {
     "@craco/craco": "^5.9.0",
     "@fortawesome/fontawesome-free": "^6.5.2",

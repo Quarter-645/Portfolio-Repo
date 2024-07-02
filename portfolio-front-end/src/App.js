@@ -7,7 +7,6 @@ import Skills from './components/Skills.js';
 import Education from './components/Education.js';
 import Contact from './components/Contact.js';
 
-
 function App() {
   return (
     <>

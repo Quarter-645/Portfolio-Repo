@@ -1,0 +1,21 @@
+@baseUrl = http://127.0.0.1:8000
+
+POST {{baseUrl}}/api/handle_email
+Content-Type: application/json
+
+{
+    "history": [
+        {
+            "selection": "I'm looking to recruit members to my team",
+            "step": "start"
+        },
+        {
+            "selection": "Yes, I loved the website",
+            "step": "Employer"
+        },
+        {
+            "selection": "Yes, that would be great!",
+            "step": "EmployerLiked"
+        }
+    ]
+}

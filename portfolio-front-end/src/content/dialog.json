@@ -1,0 +1,75 @@
+{
+    "start": {
+        "text": "Hey there, mind if we take a minute to chat? What brought you to my portfolio?",
+        "options": [
+            { "text": "I'm looking to recruit members to my team", "next": "Employer" },
+            { "text": "I'm a fellow technologist", "next": "Technologist" },
+            { "text": "I'm just exploring", "next": "Wanderer" }
+        ]
+    },
+    "Employer": {
+        "text": "That's awesome, thanks for checking out my portfolio. Did you enjoy it?",
+        "options": [
+            { "text": "Yes, I loved the website", "next": "EmployerLiked" },
+            { "text": "I didn't really enjoy it", "next": "EmployerDisliked" }
+        ]
+    },
+    "EmployerLiked": {
+        "text": "That's awesome, I'm really glad you liked it! Do you want to get in touch and discuss some of my work?",
+        "options": [
+            { "text": "Yes, that would be great!", "next": "ContactMe" },
+            { "text": "No thank you", "next": "DoNotContactMe" }
+        ]
+    },
+    "EmployerDisliked": {
+        "text": "Well thank you for the feedback, would you like to get in touch about some improvements?",
+        "options": [
+            { "text": "Yes, I think I can offer some feedback!", "next": "ContactMe" },
+            { "text": "I'm alright thank you!", "next": "DoNotContactMe" }
+        ]
+    },
+    "Technologist": {
+        "text": "Terrific! It is always good to have a peer visit, please tell me how have you my portfolio?",
+        "options": [
+            { "text": "I loved it!", "next": "TechnologistLiked" },
+            { "text": "I think it could be better", "next": "TechnologistDisliked" }
+        ]
+    },
+    "TechnologistLiked": {
+        "text": "Thank you for your kind words! Hey, would you like to get in touch about some of my work?",
+        "options": [
+            { "text": "I'd love to!", "next": "ContactMe" },
+            { "text": "I'll pass but good luck!", "next": "DoNotContactMe" }
+        ]
+    },
+    "TechnologistDisliked": {
+        "text": "That's fair enough, would you like to give me ideas of what I could improve on?",
+        "options": [
+            { "text": "Yes I think I could give some feedback!", "next": "ContactMe" },
+            { "text": "No I think I'll pass but best of luck!", "next": "DoNotContactMe" }
+        ]
+    },
+    "Wanderer": {
+        "text": "Hey thanks for checking out my portfolio even if you are just surfing the web. Did you enjoy my the website?",
+        "options": [
+            { "text": "Yes, I thought it was good!", "next": "WandererLiked" },
+            { "text": "I didn't really enjoy it", "next": "WandererDisliked" }
+        ]
+    },
+    "WandererLiked": {
+        "text": "That's awesome, thanks for the feedback please feel free to check out anything else!",
+        "options": []
+    },
+    "WandererDisliked": {
+        "text": "Well thank you for the feedback, I hope you enjoyed some of my other projects though!",
+        "options": []
+    },
+    "ContactMe": {
+        "text": "If you look below you can get in touch with me via GitHub, LinkedIn or Email (connormorrisondevelopment@gmail.com). Thanks for taking the time to view my site!",
+        "options": []
+    },
+    "DoNotContactMe": {
+        "text": "Well either way I appreciate you stopping by!",
+        "options": []
+    }
+}
