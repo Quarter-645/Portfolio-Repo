@@ -1,15 +1,17 @@
-from flask import Blueprint, jsonify, request 
+from flask import Blueprint, jsonify, request  # type: ignore
 from game_service.email.EmailFormatter import EmailFormatter
 from game_service.email.EmailSender import EmailSender
+from game_service.extensions.LimiterExtension import limiter
 
 api = Blueprint('api', __name__, url_prefix='/api/')
 
 @api.route('/health')
+@limiter.limit("1/second")
 def health():
     return jsonify({"status": "ok"}), 200
 
-
 @api.route('/handle_email', methods=['POST'])
+@limiter.limit("1/second", override_defaults=False)
 def handleEmail():
     if request.method == 'POST':
         try:
@@ -22,12 +24,3 @@ def handleEmail():
         except Exception as e:
             return jsonify({"error": str(e)}), 500
 
-
-#Remove in PROD
-@api.route('/test', methods=['POST'])
-def test():
-    data = request.get_json()
-    if not data:
-        return jsonify({"error": "Invalid data"}), 400
-    # Process the data
-    return jsonify({"request_payload": data}), 200

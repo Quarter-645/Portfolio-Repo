@@ -10,7 +10,10 @@ ENV PATH="/venv/bin:$PATH"
 RUN python3 -m ensurepip
 
 RUN pip3 install --no-cache --upgrade pip setuptools
-RUN pip3 install flask flask-cors python-dotenv
+
+COPY requirements.txt .
+
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy all files into container
 COPY . /app/.

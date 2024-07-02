@@ -39,6 +39,7 @@ class EmailSender:
             logging.info("Email sent successfully")
 
         except Exception as e:
+            logging.error(f"mail_password: {self.sender_password}")
             logging.error(f"Failed to send email: {e}")
             raise
 
