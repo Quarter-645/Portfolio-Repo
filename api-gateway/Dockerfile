@@ -6,3 +6,5 @@ COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy other necessary files (e.g., SSL certificates) if needed
 # COPY path/to/certificates /etc/nginx/certificates/
+
+EXPOSE 80
