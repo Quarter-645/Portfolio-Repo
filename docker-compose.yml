@@ -16,9 +16,9 @@ services:
       - /path/to/duckdns/config:/config #optional
     restart: unless-stopped
 
-  api-gateway:
+  alpine-api-gateway:
     build: 
-      context: ./api-gateway
+      context: ./alpine-api-gateway
     ports:
       - "80:80"
     depends_on:
