@@ -5,6 +5,7 @@ from game_service.extensions.LimiterExtension import limiter
 def create_app(): 
     app = Flask(__name__) 
     CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+    CORS(app, resources={r"/api/*": {"origins": "http://api.connormorrison.codes"}})
 
     # Initialize limiter with the app
     limiter.init_app(app)

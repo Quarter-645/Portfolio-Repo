@@ -1,5 +1,31 @@
 # docker-compose.yml
 services:
+  duckdns:
+    image: lscr.io/linuxserver/duckdns:latest
+    container_name: duckdns
+    network_mode: host #optional
+    environment:
+      - PUID=1000 #UPDATE ON RASPBERRY PI
+      - PGID=1000 #UPDATE ON RASPBERRY PI
+      - TZ=Etc/UTC #optional
+      - SUBDOMAINS=connormorrison
+      - TOKEN=c62e6ab4-dd8a-4f75-9b14-09cd51578e11
+      - UPDATE_IP=ipv4 #optional
+      - LOG_FILE=false #optional
+    volumes:
+      - /path/to/duckdns/config:/config #optional
+    restart: unless-stopped
+
+  alpine-api-gateway:
+    build: 
+      context: ./alpine-api-gateway
+    ports:
+      - "80:80"
+    depends_on:
+      - game-service
+    networks:
+      - my-network
+
   game-service:
     build:
       context: ./game-service
@@ -10,15 +36,16 @@ services:
     networks:
       - my-network
 
-  front-end:
-    build:
-      context: ./portfolio-front-end
-    ports:
-      - "3000:3000"
-    volumes:
-      - ./portfolio-front-end:/app
-    networks:
-      - my-network
+  # Remove in PROD being hosted on GitHub Pages 
+  # front-end:
+  #   build:
+  #     context: ./portfolio-front-end
+  #   ports:
+  #     - "3000:3000"
+  #   volumes:
+  #     - ./portfolio-front-end:/app
+  #   networks:
+  #     - my-network
 
 networks:
   my-network:
