@@ -79,7 +79,7 @@ function ToolSkills() {
       >
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h5">
+            <Typography variant="h6" component="h5">
               Where I learnt
             </Typography>
             <Typography id="transition-modal-title" variant="h5" component="h2">
