@@ -1,33 +1,248 @@
 {
-    "Tools" : [
-        "Python",
-        "Java",
-        "PHP",
-        "C Sharp",
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "SQL",
-        "C",
-        "RStudio",
-        "React Native",
-        "VueJS",
-        "Flask",
-        "NodeJS",
-        "DotNet",
-        "Bootstrap",
-        "TailwindCSS",
-        "React",
-        "Linux",
-        "Terraform",
-        "Docker",
-        "Amazon Web Services",
-        "NGINX",
-        "Microsoft SQL Server",
-        "SQLite",
-        "PostgreSQL",
-        "MySQL",
-        "Git",
-        "Figma"
+    "Python": {
+        "name": "Python",
+        "experience": [
+            "Introduction to Software Engineering",
+            "Design Computing Studio 3 - Build",
+            "Software Architecture",
+            "2032 Olympic XR Interactive Experience",
+            "OpenEDG Python Institute: Programming with Python Professional Certificate",
+            "Google Cybersecurity Certificate",
+            "Redlands College",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "Java": {
+        "name": "Java",
+        "experience": [
+            "Programming in the Large",
+            "Software Engineering Studio: Design, Implement and Test",
+            "Gardens of the Galaxy"
+        ]
+    },
+    "PHP": {
+        "name": "PHP",
+        "experience": [
+            "Web Developer (Freelance)",
+            "Redlands College",
+            "Web Information Systems",
+            "MenuScan"
+        ]
+    },
+    "C Sharp": {
+        "name": "C Sharp",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Workforce Australia Website"
+        ]
+    },
+    "HTML": {
+        "name": "HTML",
+        "experience": [
+            "Redlands College",
+            "Introduction to Web Design",
+            "Web/Mobile Programming",
+            "Web Information Systems",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "CSS": {
+        "name": "CSS",
+        "experience": [
+            "Redlands College",
+            "Introduction to Web Design",
+            "Design Computing Studio 3 - Build",
+            "Web Information Systems",
+            "2032 Olympic XR Interactive Experience",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "JavaScript": {
+        "name": "JavaScript",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Web Developer (Freelance)",
+            "The University of Queensland",
+            "Redlands College",
+            "JavaScript Foundations Professional Certificate by Mozilla",
+            "Introduction to Web Design",
+            "Web/Mobile Programming",
+            "2032 Olympic XR Interactive Experience",
+            "Workforce Australia Website",
+            "MenuScan",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "SQL": {
+        "name": "SQL",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Workforce Australia Website"
+        ]
+    },
+    "C": {
+        "name": "C",
+        "experience": [
+            "Introduction to Computer Systems"
+        ]
+    },
+    "RStudio": {
+        "name": "RStudio",
+        "experience": [
+            "Analysis of Scientific Data"
+        ]
+    },
+    "React Native": {
+        "name": "React Native",
+        "experience": [
+            "Web/Mobile Programming"
+        ]
+    },
+    "VueJS": {
+        "name": "VueJS",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Workforce Australia Website"
+        ]
+    },
+    "Flask": {
+        "name": "Flask",
+        "experience": [
+            "The University of Queensland",
+            "Software Architecture",
+            "Gourmet - Recipe Sharing App",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "NodeJS": {
+        "name": "NodeJS",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "JavaScript Foundations Professional Certificate by Mozilla",
+            "Web/Mobile Programming",
+            "Design Computing Studio 3 - Build",
+            "Software Architecture",
+            "2032 Olympic XR Interactive Experience",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "DotNet": {
+        "name": ".NET",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Workforce Australia Website"
+        ]
+    },
+    "Bootstrap": {
+        "name": "Bootstrap",
+        "experience": [
+            "Web Developer (Freelance)",
+            "Introduction to Web Design",
+            "Web Information Systems",
+            "2032 Olympic XR Interactive Experience",
+            "Gourmet - Recipe Sharing App"
+        ]
+    },
+    "TailwindCSS": {
+        "name": "TailwindCSS",
+        "experience": [
+        "Raspberry Pi Web Portfolio"
     ]
+    },
+    "React": {
+        "name": "React",
+        "experience": [
+            "Web Developer (Freelance)",
+            "Web/Mobile Programming",
+            "Design Computing Studio 3 - Build",
+            "Software Architecture",
+            "2032 Olympic XR Interactive Experience",
+            "Gourmet - Recipe Sharing App",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "Linux": {
+        "name": "Linux",
+        "experience": [
+            "Google Cybersecurity Certificate",
+            "Software Architecture",
+            "Web Information Systems",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "Terraform": {
+        "name": "Terraform",
+        "experience": [
+            "Software Architecture",
+            "Gourmet - Recipe Sharing App"
+        ]
+    },
+    "Docker": {
+        "name": "Docker",
+        "experience": [
+            "Docker Professional Certificate",
+            "Software Architecture",
+            "Gourmet - Recipe Sharing App",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "Amazon Web Services": {
+        "name": "Amazon Web Services",
+        "experience": [
+            "Software Architecture",
+            "Gourmet - Recipe Sharing App",
+            "Web Information Systems"
+        ]
+    },
+    "NGINX": {
+        "name": "NGINX",
+        "experience": [
+            "Web Information Systems",
+            "MenuScan",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "Microsoft SQL Server": {
+        "name": "Microsoft SQL Server",
+        "experience": [
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Workforce Australia Website"
+        ]
+    },
+    "PostgreSQL": {
+        "name": "PostgreSQL",
+        "experience": [
+            "Gourmet - Recipe Sharing App",
+            "Software Architecture"
+        ]
+    },
+    "MySQL": {
+        "name": "MySQL",
+        "experience": [
+            "Web Information Systems",
+            "Introduction to Information Systems",
+            "MenuScan"
+        ]
+    },
+    "Git": {
+        "name": "Git",
+        "experience": [
+            "Gourmet - Recipe Sharing App",
+            "Workforce Australia Website",
+            "Software Developer at Department of Employment and Workplace Relations",
+            "2032 Olympic XR Interactive Experience",
+            "Gardens of the Galaxy",
+            "Software Engineering Studio: Design, Implement and Test",
+            "Raspberry Pi Web Portfolio"
+        ]
+    },
+    "Figma": {
+        "name": "Figma",
+        "experience": [
+            "Workforce Australia Website",
+            "Software Developer at Department of Employment and Workplace Relations",
+            "Software Engineering Studio: Design, Implement and Test",
+            "Raspberry Pi Web Portfolio"
+        ]
+    }
 }
