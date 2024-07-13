@@ -1,0 +1,38 @@
+{
+    "start": {
+        "text": "Hey there, mind if we take a minute to chat? What brought you to my portfolio?"
+    },
+    "Employer": {
+        "text": "That's awesome, thanks for checking out my portfolio. Did you enjoy it?"
+    },
+    "EmployerLiked": {
+        "text": "That's awesome, I'm really glad you liked it! Do you want to get in touch and discuss some of my work?"
+    },
+    "EmployerDisliked": {
+        "text": "Well thank you for the feedback, would you like to get in touch about some improvements?"
+    },
+    "Technologist": {
+        "text": "Terrific! It is always good to have a peer visit, please tell me how have you my portfolio?"
+    },
+    "TechnologistLiked": {
+        "text": "Thank you for your kind words! Hey, would you like to get in touch about some of my work?"
+    },
+    "TechnologistDisliked": {
+        "text": "That's fair enough, would you like to give me ideas of what I could improve on?"
+    },
+    "Wanderer": {
+        "text": "Hey thanks for checking out my portfolio even if you are just surfing the web. Did you enjoy my the website?"
+    },
+    "WandererLiked": {
+        "text": "That's awesome, thanks for the feedback please feel free to check out anything else!"
+    },
+    "WandererDisliked": {
+        "text": "Well thank you for the feedback, I hope you enjoyed some of my other projects though!"
+    },
+    "ContactMe": {
+        "text": "If you look below you can get in touch with me via GitHub, LinkedIn or Email (connormorrisondevelopment@gmail.com). Thanks for taking the time to view my site!"
+    },
+    "DoNotContactMe": {
+        "text": "Well either way I appreciate you stopping by!"
+    }
+}

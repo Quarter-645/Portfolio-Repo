@@ -1,6 +1,6 @@
 @baseUrl = http://127.0.0.1:8000
 
-POST {{baseUrl}}/api/handle_email
+POST {{baseUrl}}/handle_email
 Content-Type: application/json
 
 {
