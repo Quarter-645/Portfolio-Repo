@@ -1,5 +1,5 @@
 export const sendSelectionHistory = async (history) => {
-    const url = 'http://api.connormorrison.codes/game/api/handle_email';
+    const url = 'https://api.connormorrison.codes/game/handle_email';
 
     try {
         const response = await fetch(url, {
