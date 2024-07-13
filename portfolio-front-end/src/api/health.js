@@ -1,5 +1,5 @@
 export const health = async () => {
-    const url = 'http://127.0.0.1:8000/api/health'; // Replace with your actual API endpoint
+    const url = 'https://api.connormorrison.codes/game/health'; // Replace with your actual API endpoint
 
     try {
         const response = await fetch(url, {

@@ -1,0 +1,3 @@
+.env
+/alpine-api-gateway/fullchain.pem
+/alpine-api-gateway/privkey.pem

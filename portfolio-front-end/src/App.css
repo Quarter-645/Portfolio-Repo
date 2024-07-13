@@ -5,3 +5,15 @@
 .transition-height {
     transition: max-height 0.5s ease-in-out;
 }
+
+.modal {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+  
+.modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+  

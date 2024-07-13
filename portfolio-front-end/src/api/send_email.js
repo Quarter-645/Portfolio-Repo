@@ -1,5 +1,5 @@
 export const sendSelectionHistory = async (history) => {
-    const url = 'http://127.0.0.1:8000/api/handle_email'; // Replace with your actual API endpoint
+    const url = 'https://api.connormorrison.codes/game/handle_email';
 
     try {
         const response = await fetch(url, {

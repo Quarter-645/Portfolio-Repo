@@ -6,19 +6,32 @@ import Projects from './components/Projects.js';
 import Skills from './components/Skills.js';
 import Education from './components/Education.js';
 import Contact from './components/Contact.js';
+import { sendDiscordMessage } from './api/discord.js';
+import React, { useEffect, useState } from 'react';
+
 
 function App() {
-  return (
-    <>
-    <Background/>
-    <Navbar/>
-    <Home/>
-    <Projects />
-    <Skills />
-    <Education />
-    <Contact />
-    </>
-  );
+    const [sent, updateSent] = useState(false);
+
+    useEffect(() => {
+        if (!sent) {
+            sendDiscordMessage();
+            updateSent(true);
+        }
+    }, [sent]);
+
+
+    return (
+        <>
+        <Background/>
+        <Navbar/>
+        <Home/>
+        <Projects />
+        <Skills />
+        <Education />
+        <Contact />
+        </>
+    );
 }
 
 export default App;
