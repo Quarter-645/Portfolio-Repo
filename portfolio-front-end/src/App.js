@@ -15,7 +15,7 @@ function App() {
 
     useEffect(() => {
         if (!sent) {
-            sendDiscordMessage();
+            sendDiscordMessage("ip");
             updateSent(true);
         }
     }, [sent]);

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const sendDiscordMessage = async () => {
+export const sendDiscordMessage = async (type) => {
     const fetchIp = async () => {
         try {
             const response = await axios.get('https://api.ipify.org?format=json');
@@ -15,9 +15,22 @@ export const sendDiscordMessage = async () => {
 
     const webhookURL = "https://discord.com/api/webhooks/1261665588195885150/cEXr4L-dJtqha81dVJi2J6JgTEfWBKRkk1anvrv7XswZo-6sBvXDlocOHjylNM1i0GGn";
 
-    let message = {
-        content: `A User with the IP: ${ip} Just Visited Your Portfolio!`
-    };
+    let message;
+
+    if (type === "ip") {
+        message = {
+            content: `A User with the IP: ${ip} Just Visited Your Portfolio!`
+        };
+    } else if (type === "form") {
+        message = {
+            content: `A User with the IP: ${ip} Just Completed Your Form!`
+        };
+    } else {
+        message = {
+            content: `A User with the IP: ${ip} took an unknown action!`
+        };
+    }
+    
 
     fetch(webhookURL, {
         method: 'POST',

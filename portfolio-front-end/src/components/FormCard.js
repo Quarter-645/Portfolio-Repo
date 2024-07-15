@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import useInView from '../hooks/useInView';
 import formData from '../content/dialog.json';
 import { sendSelectionHistory } from '../api/send_email';
+import { sendDiscordMessage } from '../api/discord';
 
 function FormCard() {
     const [ref, isInView] = useInView(0.5);
@@ -15,6 +16,7 @@ function FormCard() {
 
     useEffect(() => {
         if (!formData[currentStep].options.length) {
+            sendDiscordMessage("form");
             sendSelectionHistory(selectionHistory)
                 .then(result => console.log('Selection history sent successfully:', result))
                 .catch(error => console.error('Error sending selection history:', error));
