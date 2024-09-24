@@ -29,7 +29,7 @@
         ]
     },
     "Technologist": {
-        "text": "Terrific! It is always good to have a peer visit, please tell me how have you my portfolio?",
+        "text": "Terrific! It is always good to have a peer visit, please tell me how have you found my portfolio?",
         "options": [
             { "text": "I loved it!", "next": "TechnologistLiked" },
             { "text": "I think it could be better", "next": "TechnologistDisliked" }

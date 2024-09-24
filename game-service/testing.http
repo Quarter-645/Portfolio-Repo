@@ -1,5 +1,14 @@
-@baseUrl = http://127.0.0.1:8000
+# @baseUrl = http://127.0.0.1:8000
 
+@baseUrl = https://api.connormorrison.codes/game
+
+### Get on root
+GET https://api.connormorrison.codes/
+
+### Get health of website
+GET {{baseUrl}}/health
+
+### POST to create email
 POST {{baseUrl}}/handle_email
 Content-Type: application/json
 
@@ -19,3 +28,5 @@ Content-Type: application/json
         }
     ]
 }
+
+
